@@ -1,0 +1,110 @@
+.container { /* 배경 이미지로 5x5 모눈이 그려진 컨테이너 */
+  width: 300px; height: 300px; padding: 0px; margin: 1px;
+  border: black solid 1px;
+  background-color: transparent;
+  background-image:
+    linear-gradient(black 2px, transparent 2px),
+    linear-gradient(90deg, black 2px, transparent 2px),
+    linear-gradient(gray 1px, transparent 1px),
+    linear-gradient(90deg, gray 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-repeat: repeat;
+  background-position: -1px -1px;
+}
+
+.square { display: flex;
+  width: 40px; height: 40px; margin: 5px;
+  justify-content: center; align-items: center;
+  border-style: solid; border-width: 5px;
+  border-radius: 2px; border-color: teal;
+  font-size: 32px; font-weight: bold; color: blue;
+}
+
+.circle { display: flex;
+  width: 46px; height: 46px; margin: 2px;
+  justify-content: center; align-items: center;
+  border-style: solid; border-width: 5px;
+  border-radius: 29px; border-color: red;
+  font-size: 32px; font-weight: bold; color: brown;
+}
+
+.flex { display: flex; }
+
+.grid { display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.fd-r  { flex-direction: row; }    .fd-rr { flex-direction: row-reverse; }
+.fd-c  { flex-direction: column; } .fd-cr { flex-direction: column-reverse; }
+
+.fw-w  { flex-wrap: wrap; }        .fw-wr { flex-wrap: wrap-reverse; }
+
+.jc-fs { justify-content: flex-start; }
+.jc-fe { justify-content: flex-end; }
+.jc-c  { justify-content: center; }
+.jc-sa { justify-content: space-around; }
+.jc-sb { justify-content: space-between; }
+
+.ac-fs { align-content: flex-start; }
+.ac-fe { align-content: flex-end; }
+.ac-c  { align-content: center; }
+.ac-sa { align-content: space-around; }
+.ac-sb { align-content: space-between; }
+
+.ai-fs { align-items: flex-start; }
+.ai-fe { align-items: flex-end; }
+.ai-c  { align-items: center; }
+
+.as-fs { align-self: flex-start; }
+.as-fe { align-self: flex-end; }
+.as-c  { align-self: center; }
+
+
+.ord0  { order:  0; }
+.ord1  { order:  1; } .ord2  { order:  2; } .ord3  { order:  3; }
+.ord-1 { order: -1; } .ord-2 { order: -2; } .ord-3 { order: -3; }
+
+.gcs0 { grid-column-start: 0; }
+.gcs1 { grid-column-start: 1; } .gcs-1 { grid-column-start: -1; }
+.gcs2 { grid-column-start: 2; } .gcs-2 { grid-column-start: -2; }
+.gcs3 { grid-column-start: 3; } .gcs-3 { grid-column-start: -3; }
+.gcs4 { grid-column-start: 4; } .gcs-4 { grid-column-start: -4; }
+.gcs5 { grid-column-start: 5; } .gcs-5 { grid-column-start: -5; }
+.gcs6 { grid-column-start: 6; } .gcs-6 { grid-column-start: -6; }
+
+.gce0 { grid-column-end: 0; }
+.gce1 { grid-column-end: 1; } .gce-1 { grid-column-end: -1; }
+.gce2 { grid-column-end: 2; } .gce-2 { grid-column-end: -2; }
+.gce3 { grid-column-end: 3; } .gce-3 { grid-column-end: -3; }
+.gce4 { grid-column-end: 4; } .gce-4 { grid-column-end: -4; }
+.gce5 { grid-column-end: 5; } .gce-5 { grid-column-end: -5; }
+.gce6 { grid-column-end: 6; } .gce-6 { grid-column-end: -6; }
+
+.grs0 { grid-row-start: 0; }
+.grs1 { grid-row-start: 1; } .grs-1 { grid-row-start: -1; }
+.grs2 { grid-row-start: 2; } .grs-2 { grid-row-start: -2; }
+.grs3 { grid-row-start: 3; } .grs-3 { grid-row-start: -3; }
+.grs4 { grid-row-start: 4; } .grs-4 { grid-row-start: -4; }
+.grs5 { grid-row-start: 5; } .grs-5 { grid-row-start: -5; }
+.grs6 { grid-row-start: 6; } .grs-6 { grid-row-start: -6; }
+
+.gre0 { grid-row-end: 0; }
+.gre1 { grid-row-end: 1; } .gre-1 { grid-row-end: -1; }
+.gre2 { grid-row-end: 2; } .gre-2 { grid-row-end: -2; }
+.gre3 { grid-row-end: 3; } .gre-3 { grid-row-end: -3; }
+.gre4 { grid-row-end: 4; } .gre-4 { grid-row-end: -4; }
+.gre5 { grid-row-end: 5; } .gre-5 { grid-row-end: -5; }
+.gre6 { grid-row-end: 6; } .gre-6 { grid-row-end: -6; }
+
+.gcs-sp1 { grid-column-start: span 1; } .gce-sp1 { grid-column-end: span 1; }
+.gcs-sp2 { grid-column-start: span 2; } .gce-sp2 { grid-column-end: span 2; }
+.gcs-sp3 { grid-column-start: span 3; } .gce-sp3 { grid-column-end: span 3; }
+.gcs-sp4 { grid-column-start: span 4; } .gce-sp4 { grid-column-end: span 4; }
+.gcs-sp5 { grid-column-start: span 5; } .gce-sp5 { grid-column-end: span 5; }
+
+.grs-sp1 { grid-row-start: span 1; } .gre-sp1 { grid-row-end: span 1; }
+.grs-sp2 { grid-row-start: span 2; } .gre-sp2 { grid-row-end: span 2; }
+.grs-sp3 { grid-row-start: span 3; } .gre-sp3 { grid-row-end: span 3; }
+.grs-sp4 { grid-row-start: span 4; } .gre-sp4 { grid-row-end: span 4; }
+.grs-sp5 { grid-row-start: span 5; } .gre-sp5 { grid-row-end: span 5; }
